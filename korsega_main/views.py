@@ -8,3 +8,9 @@ def home(request):
 def Signin(request):
     return render(request,"signin.html")
 
+def Signup(request):
+    return render(request,"signup.html")
+
+def forgot_passsword(request):
+    return render(request,"forgotpassword.html")
+

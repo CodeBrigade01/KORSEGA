@@ -8,5 +8,7 @@
 <body>
     {% csrf_token %}
     Welcome {{e}}
+
+    <button type="button" onclick="location.href='{% url 'log' %}'" >Logout</button>
 </body>
 </html>
