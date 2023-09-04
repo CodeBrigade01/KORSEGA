@@ -1,9 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signin</title>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
 </head>
 <body>
     
@@ -16,13 +19,6 @@
         <input type="submit" value="Signin" />
     </form>
         <button id="forgotpassword">Forget Password</button>
-    
-
-    <script>
-        var btn = document.getElementById('forgotpassword');
-        btn.addEventListener('click',function(){
-            window.location = "/forgotpassword"
-        })
-    </script>
+    <script src="{% static 'js/signin.js' %}"></script>
 </body>
 </html>
