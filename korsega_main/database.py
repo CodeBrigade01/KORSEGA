@@ -77,4 +77,11 @@ def forgot_password(request):
     email = request.POST.get('email')
     auth_.send_password_reset_email(email)
 
-    return HttpResponse("PassWord changes successfully")
+    try:
+        message = "Please check your email"
+        return render(request,'page.html',{"msg":message})
+        
+    except:
+        message = "Some thing went wrong Please try again later"
+        return render(request,'page.html',{"msg":message})
+        
