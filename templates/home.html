@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="{% static 'index.css' %}">
 </head>
 <body>
+
+    {% if user.is_authenticated %}
     <h1>
         hello world {{username}}
     </h1>
-    <h2>Hello world</h2>
+    {% endif %}
+   
+    <h2>Plz login</h2>
+    
+    
+    
 </body>
 </html>

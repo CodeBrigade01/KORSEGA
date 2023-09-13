@@ -24,8 +24,9 @@ def PostSignin(request):
 
     user = auth_.sign_in_with_email_and_password(email, Password)
     print(user)
-    # session_id = user['idToken']
-    # request.session['uid'] = str(session_id)
+    
+    session_id = user['idToken']
+    request.session['uid'] = str(session_id)
 
     try:
         user = auth_.sign_in_with_email_and_password(email, Password)
@@ -35,8 +36,7 @@ def PostSignin(request):
         message = "invalid cerediantials"
         return render(request, "signin.html", {"msg": message})
 
-    session_id = user['idToken']
-    request.session['uid'] = str(session_id)
+    
 
 
 def PostSignup(request):
@@ -56,6 +56,8 @@ def PostSignup(request):
     print(user)
 
     # Taking session from user
+    session_id = user['idToken']
+    request.session['uid'] = str(session_id)
 
     try:
         user = auth_.sign_in_with_email_and_password(email, password)
@@ -64,8 +66,7 @@ def PostSignup(request):
         message = "invalid cerediantials"
         return render(request, "signup.html", {"msg": message})
 
-    session_id = user['idToken']
-    request.session['uid'] = str(session_id)
+    
 
 
 def logout(request):

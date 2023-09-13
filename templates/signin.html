@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="{% static 'css/signin.css' %}">
 </head>
 <body>
+
     
-    <form action="postsign" method="post">
+    
+    <form action="dashboard" method="post">
         {% csrf_token %}
         <h4>Email:</h4>
         <input type="email" placeholder="Enter your Email"  name="email">
