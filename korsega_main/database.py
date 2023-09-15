@@ -3,6 +3,9 @@ import pyrebase
 from django.http import HttpResponse
 from django.contrib import auth
 
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
+
 config = {
     "apiKey": "AIzaSyAh4r10gdes4ePXAOrzL64XUKm5FVfczXU",
     "authDomain": "korsega-b590c.firebaseapp.com",
@@ -24,6 +27,9 @@ def PostSignin(request):
 
     user = auth_.sign_in_with_email_and_password(email, Password)
     print(user)
+
+    # user_django = authenticate(email, Password)
+    # print(user_django)
     
     session_id = user['idToken']
     request.session['uid'] = str(session_id)
@@ -37,8 +43,6 @@ def PostSignin(request):
         return render(request, "signin.html", {"msg": message})
 
     
-
-
 def PostSignup(request):
     username = request.POST.get('username')
     email = request.POST.get('email')
@@ -55,23 +59,22 @@ def PostSignup(request):
 
     print(user)
 
-    # Taking session from user
     session_id = user['idToken']
     request.session['uid'] = str(session_id)
 
     try:
         user = auth_.sign_in_with_email_and_password(email, password)
-        return render(request, "welcome.html", {"e": username})
+        return render(request, "welcome.html", {"e": username, "token": request.session['uid']})
     except:
         message = "invalid cerediantials"
         return render(request, "signup.html", {"msg": message})
 
-    
-
-
 def logout(request):
-   auth.logout(request)
-   return render(request,'home.html')
+    try:
+        request.session['uid']
+    except:
+        pass
+    return render(request,'home.html')
 
 
 def forgot_password(request):
@@ -85,4 +88,7 @@ def forgot_password(request):
     except:
         message = "Some thing went wrong Please try again later"
         return render(request,'page.html',{"msg":message})
-        
+
+
+def youtube(request):
+    return None

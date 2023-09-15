@@ -1,24 +1,75 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" />
 </head>
 <body>
-
-    <form action="postSignup" method="post">
-        {% csrf_token %}
-        <h1>username</h1>
-        <input type="text" name="username">
-        <h1>Email</h1>
-        <input type="email" name="email">
-        <h1>Password</h1>
-        <input type="password" name="password">
-        <button type="submit">Submit</button>
-       
-    </form>
+        <div class="sign-up">
+            <div class="casual-life-3d-pink-chart-with-parent">
+              <img
+                class="casual-life-3d-pink-chart-with-icon"
+                alt=""
+                src="{% static 'images/casuallife3dpinkchartwithgreengraph-1@2x.png' %}"
+              />
+      
+              <img
+                class="casual-life-3d-young-woman-med-icon"
+                alt=""
+                src="{% static 'images/casuallife3dyoungwomanmeditatingwithpinkgadget1-1@2x.png' %}"
+              />
+      
+              <img
+                class="casual-life-3d-cat-on-books-1-icon"
+                alt=""
+                src="{% static 'images/casuallife3dcatonbooks-1@2x.png'%}"
+              />
+            </div>
+            <img class="sign-up-child" alt="" src="{% static  'images/rectangle-1@2x.png' %}" />
+      
+            <h1 class="sign-up1">Sign Up</h1>
     
+        <form action="postSignup" method="post">
+          {% csrf_token %}
+           <input
+            class="sign-up-item"
+            type="email"
+            name="email"
+            placeholder="Example@gmail.com"
+          />
+          <input
+            class="sign-up-inner"
+            type="pass"
+            placeholder="Enter your Password"
+            name="password"
+          />
+          <div class="create-password">Create Password</div>
+          <div class="email-address">Email Address</div>
+          <input
+            class="rectangle-input"
+            name="username"
+            placeholder="Enter your username"
+            type="text"
+          />
+          <div class="username">Username</div>
+           <button class="rectangle-button" id="rectangleButton">SignUp</button>
+           
+        </form>
 
+
+        <div class="key-fill-parent">
+            <img class="key-fill-icon" alt="" src=" {% static 'image/keyfill.svg' %}" />
+            <img
+              class="mail-open-line-icon"
+              alt=""
+              src="{% static 'image/mailopenline.svg' %}"
+            />
+            <img class="icon-person" alt="" src="{% static '-icon-person.svg' %}" />
+          </div>
+        </div>
 </body>
 </html>

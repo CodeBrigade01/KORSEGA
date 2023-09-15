@@ -2,25 +2,185 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signin</title>
-    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
+  </head>
+  <body>
+    <div class="sign-up">
+        <div class="casual-life-3d-pink-chart-with-parent">
+          <img
+            class="casual-life-3d-pink-chart-with-icon"
+            alt=""
+            src="{% static 'images/casuallife3dpinkchartwithgreengraph-1@2x.png' %}"
+          />
+  
+          <img
+            class="casual-life-3d-young-woman-med-icon"
+            alt=""
+            src="{% static 'images/casuallife3dyoungwomanmeditatingwithpinkgadget1-1@2x.png' %}"
+          />
+  
+          <img
+            class="casual-life-3d-cat-on-books-1-icon"
+            alt=""
+            src="{% static 'images/casuallife3dcatonbooks-1@2x.png'%}"
+          />
+        </div>
+        <img class="sign-up-child" alt="" src="{% static  'images/rectangle-1@2x.png' %}" />
+  
+        <h1 class="sign-up1">Sign Up</h1>
 
-    
-    
     <form action="dashboard" method="post">
-        {% csrf_token %}
-        <h4>Email:</h4>
-        <input type="email" placeholder="Enter your Email"  name="email">
-        <h4>Password:</h4>
-        <input type="pass" placeholder="Enter your Password" name="Password">
-        <input type="submit" value="Signin" />
+      {% csrf_token %}
+      <!-- <h4>Email:</h4>
+      <input type="email" placeholder="Enter your Email" name="email" />
+      <h4>Password:</h4>
+      <input type="pass" placeholder="Enter your Password" name="Password" />
+      <input type="submit" value="Signin" />  -->
+       <input
+        class="sign-up-item"
+        type="email"
+        name="email"
+        placeholder="Example@gmail.com"
+      />
+      <input
+        class="sign-up-inner"
+        type="pass"
+        placeholder="Enter your Password"
+        name="Password"
+      />
+      <div class="create-password">Create Password</div>
+      <div class="email-address">Email Address</div>
+      <input
+        class="rectangle-input"
+        name="username"
+        placeholder="Enter your username"
+        type="text"
+      />
+      <div class="username">Username</div>
+       <button class="rectangle-button" id="rectangleButton"></button>
+    <input type="submit" class="login" value="Signin" />
     </form>
-        <button id="forgotpassword">Forget Password</button>
+    <div class="key-fill-parent">
+        <img class="key-fill-icon" alt="" src=" {% static 'image/keyfill.svg' %}" />
+        <img
+          class="mail-open-line-icon"
+          alt=""
+          src="{% static 'image/mailopenline.svg' %}"
+        />
+
+        <img class="icon-person" alt="" src="{% static '-icon-person.svg' %}" />
+      </div>
+    </div>
+    <button id="forgotpassword">Forget Password</button>
+
     <script src="{% static 'js/signin.js' %}"></script>
-</body>
-</html>
+  </body>
+</html> 
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up">
+      <div class="casual-life-3d-pink-chart-with-parent">
+        <img
+          class="casual-life-3d-pink-chart-with-icon"
+          alt=""
+          src="{% static 'images/casuallife3dpinkchartwithgreengraph-1@2x.png' %}"
+        />
+
+        <img
+          class="casual-life-3d-young-woman-med-icon"
+          alt=""
+          src="./public/casuallife3dyoungwomanmeditatingwithpinkgadget1-1@2x.png"
+        />
+
+        <img
+          class="casual-life-3d-cat-on-books-1-icon"
+          alt=""
+          src="./public/casuallife3dcatonbooks-1@2x.png"
+        />
+      </div>
+      <img class="sign-up-child" alt="" src="./public/rectangle-1@2x.png" />
+
+      <h1 class="sign-up1">Sign Up</h1>
+      <input
+        class="sign-up-item"
+        name="emal"
+        placeholder="Example@gmail.com"
+        type="text"
+      />
+
+      <input
+        class="sign-up-inner"
+        name="password"
+        placeholder="Enter password"
+        type="text"
+      />
+
+      <div class="create-password">Create Password</div>
+      <div class="email-address">Email Address</div>
+      <input
+        class="rectangle-input"
+        name="username"
+        placeholder="Enter your username"
+        type="text"
+      />
+
+      <div class="username">Username</div>
+      <button class="rectangle-button" id="rectangleButton"></button>
+      <button class="login" id="login">Login</button>
+
+      <div class="key-fill-parent">
+        <img class="key-fill-icon" alt="" src="./public/keyfill.svg" />
+
+        <img
+          class="mail-open-line-icon"
+          alt=""
+          src="./public/mailopenline.svg"
+        />
+
+        <img class="icon-person" alt="" src="./public/-icon-person.svg" />
+      </div>
+    </div>
+
+    <script>
+      var rectangleButton = document.getElementById("rectangleButton");
+      if (rectangleButton) {
+        rectangleButton.addEventListener("click", function (e) {
+          window.location.href = "./new-course.html";
+        });
+      }
+      
+      var login = document.getElementById("login");
+      if (login) {
+        login.addEventListener("click", function (e) {
+          window.location.href = "./new-course.html";
+        });
+      }
+      </script>
+  </body>
+</html> -->
