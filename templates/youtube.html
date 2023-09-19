@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">Skill Learning</h1>
+        <form  method="GET" class="mb-8">
+            <label for="skill_name" class="block mb-2">Enter the skill you want to learn:</label>
+            <input type="text" name="skill_name" required class="w-full border rounded px-3 py-2">
+            <button type="submit" class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Generate Subtopics and Videos
+            </button>
+        </form>
+        <h2 class="text-2xl font-bold mb-2">Subtopics:</h2>
+        <ul class="list-disc pl-5">
+            {% for video_id in url_list %}
+            <li class="mb-2">{{video_id}}</li>
+            {% endfor %}
+        </ul>
+
+        <h2 class="text-2xl font-bold mt-4">Videos:</h2>
+
+        {% for url in  url_list%}
+        <iframe class="video_display" src = {{url}}>
+        {% endfor %}
+    </div>
+    <script>
+        {{subtopics}}.forEach(element => {
+            document.querySelector('.mb-2').innerHTML = element;
+            console.log(element)
+        });
+        // {{url_list|safe}}.forEach(element => {
+        //     let video = document.querySelector('video_display');
+        //     document.querySelector('url').innerHTML = element
+        //     console.log(element)
+        //     video.src = element;
+        // });
+    </script>
+</body>
+</html>

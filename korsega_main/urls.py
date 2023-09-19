@@ -2,6 +2,7 @@ from django.urls import path
 from django.urls import include
 from . import views
 from . import database
+from . import openai
 # from django.urls import url
 
 urlpatterns = [
@@ -13,4 +14,5 @@ urlpatterns = [
     path('/logout',database.logout,name="log"),
     path('forgotpassword',views.forgot_passsword),
     path('forgotpassword/forgotpassword',database.forgot_password),
+    path('topic',openai.youtube_API)
 ]
