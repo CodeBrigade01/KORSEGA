@@ -1,0 +1,333 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.ca822d48e57b4a18f40ff5172svg-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1199px;
+    height: 711px;
+  }
+  .screenshot-2023-09-02-090251-r-icon {
+    position: absolute;
+    top: 22px;
+    left: 34px;
+    width: 189px;
+    height: 42px;
+    object-fit: cover;
+  }
+  .abefore {
+    position: absolute;
+    margin: 0 !important;
+    top: -2.5px;
+    left: 0;
+    border-radius: 16px;
+    background-color: #64fcd9;
+    box-shadow: 0 4px 0#58a700;
+    width: 320px;
+    height: 46px;
+    z-index: 0;
+  }
+  .get-started {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: Inter;
+    color: #2e2753;
+    text-align: center;
+    z-index: 1;
+  }
+  .a,
+  .buttonbefore {
+    position: absolute;
+    border-radius: 16px;
+  }
+  .a {
+    cursor: pointer;
+    border: 0;
+    padding: 11.5px 110.9078140258789px 20.5px 111.0921859741211px;
+    background-color: transparent;
+    top: 372px;
+    left: calc(50% + 58.66px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .buttonbefore {
+    margin: 0 !important;
+    top: -2.5px;
+    left: 0;
+    background-color: #cbfbf0;
+    box-shadow: 0 2px 0#042c60;
+    border: 2px solid #042c60;
+    box-sizing: border-box;
+    width: 320px;
+    height: 48px;
+    z-index: 0;
+  }
+  .button,
+  .the-free-fun {
+    position: absolute;
+    display: flex;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: 12.5px 50.407814025878906px 19.5px 50.592185974121094px;
+    background-color: transparent;
+    top: 434px;
+    left: calc(50% + 58.66px);
+    border-radius: 16px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .the-free-fun {
+    margin: 0;
+    top: 242px;
+    left: calc(50% - 74px);
+    font-size: inherit;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 585.51px;
+  }
+  .div-icon {
+    position: absolute;
+    top: 212.5px;
+    left: 125.34px;
+    width: 360px;
+    height: 360px;
+  }
+  .the-worlds-1 {
+    position: absolute;
+    top: 0;
+    left: 1.37px;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Inter;
+    color: #3c3c3c;
+    text-align: left;
+  }
+  .learning-with-korsega {
+    font-weight: 500;
+    font-family: Inter;
+  }
+  .simple {
+    text-decoration: underline;
+    font-family: Inter;
+  }
+  .learning-with-korsega-container1 {
+    line-break: anywhere;
+    width: 100%;
+  }
+  .learning-with-korsega-container {
+    position: absolute;
+    top: 62.25px;
+    left: 0;
+    font-size: 15px;
+    line-height: 25.5px;
+    color: #2e2753;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 702.33px;
+  }
+  .content {
+    position: relative;
+    width: 728px;
+    height: 126px;
+  }
+  .about-duolingo,
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 40px 40px 64px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .about-duolingo {
+    cursor: pointer;
+    border: 0;
+    padding: 0 187.5px;
+    background-color: #64fcd9;
+    position: absolute;
+    top: 706px;
+    left: 0;
+    width: 1262px;
+    height: 161px;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+  .our-courses-effectively {
+    margin: 0;
+    position: absolute;
+    top: 33.7px;
+    left: 58px;
+    font-size: inherit;
+    line-height: 23.8px;
+    font-weight: 500;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    width: 207.59px;
+  }
+  .effective-and-efficient {
+    margin: 0;
+    position: absolute;
+    top: 4.5px;
+    left: 62.88px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    color: #64fcd9;
+  }
+  .vectors-icon {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+  }
+  .benefit {
+    position: relative;
+    width: 285.55px;
+    height: 148.19px;
+  }
+  .benefits {
+    width: 322px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0 0;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .illustration-icon {
+    position: relative;
+    width: 245px;
+    height: 161.56px;
+  }
+  .combining-the-best,
+  .personalized-learning {
+    margin: 0;
+    position: absolute;
+    font-family: inherit;
+  }
+  .combining-the-best {
+    top: 33.7px;
+    left: 15px;
+    font-size: inherit;
+    line-height: 23.8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 215px;
+  }
+  .personalized-learning {
+    top: 4.5px;
+    left: 17.15px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #64fcd9;
+  }
+  .content2 {
+    position: absolute;
+    top: 0;
+    left: 43px;
+    width: 242.55px;
+    height: 148.19px;
+  }
+  .benefits1,
+  .content1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .benefits1 {
+    width: 322px;
+    flex-direction: column;
+    padding: 48px 0 23.796875px;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+  .content1 {
+    position: absolute;
+    top: 101px;
+    left: calc(50% - 493px);
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+  .why-youll-love {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 194.9px);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: inherit;
+    color: #64fcd9;
+  }
+  .a1,
+  .button1 {
+    cursor: pointer;
+    border: 0;
+    padding: 11.5px 110.9078140258789px 20.5px 111.0921859741211px;
+    background-color: transparent;
+    position: absolute;
+    top: 425px;
+    left: calc(50% - 336px);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .button1 {
+    padding: 12.5px 50.407814025878906px 19.5px 50.592185974121094px;
+    top: 423px;
+    left: calc(50% + 9px);
+  }
+  .container1 {
+    position: relative;
+    width: 807px;
+    height: 475px;
+  }
+  .why-youll-love-duolingo {
+    position: absolute;
+    top: 872px;
+    left: -2px;
+    background-color: #1b143e;
+    width: 1264px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 187.5px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 14px;
+  }
+  .homepage {
+    position: relative;
+    background-color: #1b143e;
+    width: 100%;
+    height: 1392px;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    font-family: Inter;
+    margin: 0px;
+    padding: 0px;
+  }

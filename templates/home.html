@@ -1,15 +1,118 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'index.css' %}">
-</head>
-<body>
-    <h1>
-        Home Page
-    </h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="homepage">
+      <img
+        class="ca822d48e57b4a18f40ff5172svg-icon"
+        alt=""
+        src="{% static 'images/4986531ca822d48e57b4a18f40ff5172svg.svg' %}"
+      />
+
+      <img
+        class="screenshot-2023-09-02-090251-r-icon"
+        alt=""
+        src="{% static 'images/screenshot-20230902-090251removebgpreview-1@2x.png' %}"
+      />
+
+      <button class="a" id="a">
+        <div class="abefore"></div>
+        <b class="get-started">Get started</b>
+      </button>
+      <button class="button" id="button">
+        <div class="buttonbefore"></div>
+        <b class="get-started">I ALREADY HAVE AN ACCOUNT</b>
+      </button>
+      <h1 class="the-free-fun">
+        The free, fun, and effective way to learn a Skill!
+      </h1>
+      <img class="div-icon" alt="" src="{% static 'images/div.svg' %}" />
+
+      <button class="about-duolingo">
+         <{%div class="contain %er"}>
+          <div class="content">
+            <b class="the-worlds-1">The world’s #1 way to learn a skill</b>
+            <div class="learning-with-korsega-container">
+              <span class="learning-with-korsega-container1">
+                <span class="learning-with-korsega"
+                  >Learning with Korsega is fun, and
+                </span>
+                <b class="simple">simple</b>
+                <span class="learning-with-korsega"
+                  >! With quick, bite-sized lessons, with zero distraction</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </button>
+      <div class="why-youll-love-duolingo">
+        <div class="container1">
+          <div class="content1">
+            <div class="benefits">
+              <div class="benefit">
+                <h5 class="our-courses-effectively">
+                  Our courses effectively and efficiently teach every possible
+                  skill you what to learn!
+                </h5>
+                <h5 class="effective-and-efficient">Effective and efficient</h5>
+                <img class="vectors-icon" alt="" src="{% static  'images/vectors.svg' %}" />
+              </div>
+            </div>
+            <img
+              class="illustration-icon"
+              alt=""
+              src="{% static 'images/illustration.svg' %}"
+            />
+
+            <div class="benefits1">
+              <div class="benefit">
+                <div class="content2">
+                  <h5 class="combining-the-best">
+                    Combining the best of ChatGPT and Youtube algorithm, lessons
+                    are tailored to help you learn at just the right level and
+                    pace.
+                  </h5>
+                  <h5 class="personalized-learning">Personalized learning</h5>
+                </div>
+                <img class="vectors-icon" alt="" src="{% static  'images/vectors1.svg' %}" />
+              </div>
+            </div>
+          </div>
+          <h1 class="why-youll-love">Why you’ll love learning with Korsega</h1>
+          <button class="a1" id="a1">
+            <div class="abefore"></div>
+            <b class="get-started">Get started</b>
+          </button>
+          <button class="button1" id="button1">
+            <div class="buttonbefore"></div>
+            <b class="get-started">I ALREADY HAVE AN ACCOUNT</b>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'js/home.js' %}">
+      
+      </script>
+  </body>
 </html>

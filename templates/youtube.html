@@ -1,3 +1,5 @@
+{% load static%}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,28 +18,18 @@
         </form>
         <h2 class="text-2xl font-bold mb-2">Subtopics:</h2>
         <ul class="list-disc pl-5">
-            {% for video_id in url_list %}
-            <li class="mb-2">{{video_id}}</li>
-            {% endfor %}
+            
+            <li class="mb-2">{{subtopics}}</li>
+            
         </ul>
 
         <h2 class="text-2xl font-bold mt-4">Videos:</h2>
 
-        {% for url in  url_list%}
+        {% for url in  video_url%}
         <iframe class="video_display" src = {{url}}>
         {% endfor %}
     </div>
-    <script>
-        {{subtopics}}.forEach(element => {
-            document.querySelector('.mb-2').innerHTML = element;
-            console.log(element)
-        });
-        // {{url_list|safe}}.forEach(element => {
-        //     let video = document.querySelector('video_display');
-        //     document.querySelector('url').innerHTML = element
-        //     console.log(element)
-        //     video.src = element;
-        // });
+    <script src="{% static 'js/youtube.js' %}">
     </script>
 </body>
 </html>

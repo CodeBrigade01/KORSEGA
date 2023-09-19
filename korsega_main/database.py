@@ -36,7 +36,7 @@ def PostSignin(request):
 
     try:
         user = auth_.sign_in_with_email_and_password(email, Password)
-        return render(request, "welcome.html", {"e": email})
+        return redirect("/topic")
 
     except:
         message = "invalid cerediantials"
@@ -64,7 +64,7 @@ def PostSignup(request):
 
     try:
         user = auth_.sign_in_with_email_and_password(email, password)
-        return render(request, "welcome.html", {"e": username, "token": request.session['uid']})
+        return redirect("/topic")
     except:
         message = "invalid cerediantials"
         return render(request, "signup.html", {"msg": message})
@@ -83,12 +83,11 @@ def forgot_password(request):
 
     try:
         message = "Please check your email"
-        return render(request,'page.html',{"msg":message})
+        return render(request,'home.html',{"msg":message})
         
     except:
         message = "Some thing went wrong Please try again later"
         return render(request,'page.html',{"msg":message})
-
 
 def youtube(request):
     return None
